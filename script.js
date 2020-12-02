@@ -17,7 +17,7 @@ client.on("message", (message) => {
   const args = message.content.slice("-".length).split(/ +/);
   const command = args.shift().toLowerCase();
   if (command != "tutaj") return;
-  if (message.author.id == "419560454688473108") return;
+  if (message.author.id != "419560454688473108") return;
   var countDownDate = new Date("Dec 10, 2020 01:00:00").getTime();
 
   // Update the count down every 1 second
